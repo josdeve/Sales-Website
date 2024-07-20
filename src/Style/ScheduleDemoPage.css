@@ -1,0 +1,90 @@
+
+.schedule-demo-container {
+  padding: 0px 0;
+color: #ffffff;
+text-align: center;
+background-color: transparent;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 102vh;
+}
+
+.schedule-demo-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.schedule-demo-container p {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.schedule-demo-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.schedule-demo-container label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.schedule-demo-container input,
+.schedule-demo-container textarea,
+.schedule-demo-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #f51f1f;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.schedule-demo-container input[type="submit"] {
+  background-color: #00ff08;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.schedule-demo-container input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.schedule-demo-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='%23ccc' d='M7.247 10.95l4.79-4.79a1 1 0 0 1 1.414 0l1.414 1.414L11.414 7H15a1 1 0 1 1 0 2H11.414l2.12 2.12a1 1 0 0 1 0 1.414l-4.79 4.79a1 1 0 0 1-1.414 0z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.schedule-demo-container input:focus,
+.schedule-demo-container textarea:focus,
+.schedule-demo-container select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-demo-container button[type="submit"]:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+

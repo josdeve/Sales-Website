@@ -1,0 +1,122 @@
+.email-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem;
+  background-image: linear-gradient(to right, #000000, #f5f5f5);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 0rem;
+  /* Add a subtle gradient effect to the background */
+
+}
+
+.email-page:hover {
+  background-position: 100% 100%;
+}
+
+.email-contacts,
+.email-form {
+  width: 80%;
+  max-width: 600px;
+  background-image: linear-gradient(to bottom, #001646, #1b173d); /* Gradient background */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  /* Add a subtle animation to the email contacts and form */
+  transition: transform 0.5s ease-in-out;
+}
+
+.email-contacts:hover,
+.email-form:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.email-contacts h2,
+.email-form h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.email-contacts ul {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: email-list;
+  text-align: center;
+}
+
+.email-contacts li {
+  counter-increment: email-list;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-contacts li:before {
+  content: counter(email-list) ". ";
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.email-contacts .phone {
+  margin-left: 5rem;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.email-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-form label {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.email-form input,
+.email-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.email-form textarea {
+  height: 100px;
+}
+
+.email-form button {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 100px;
+  padding: 0.5rem 10rem;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.email-form button:hover {
+  background-color: #216bb9;
+}
+
+.sent-message {
+  color: #33cc33;
+  font-size: 18px;
+  font-weight: bold;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

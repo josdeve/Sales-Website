@@ -1,0 +1,84 @@
+.header {
+  background: linear-gradient(to right, #000d85, #3c427c);
+  color: #ffffff;
+  padding: -5.8rem 0;
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  z-index: 100;
+  border-radius: 11.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  height: 35px;
+  margin-right: 1rem;
+}
+
+.header .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.header .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #2f0038, #3c427c);
+  transition: width 0.3s ease-in-out;
+}
+
+.header .nav-link:hover {
+  color: #3498db;
+}
+
+.header .nav-link:hover:before {
+  width: 100%;
+}
+
+.header .btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.header .btn-primary {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+}
+
+.header .btn-primary:hover {
+  background-color: #2980b9;
+}

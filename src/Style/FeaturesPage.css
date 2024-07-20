@@ -1,0 +1,48 @@
+.features-page {
+  background-image: linear-gradient(to bottom, #000000, #414141); /* Gradient background */
+  padding: 180px;
+  font-family: 'Open Sans', sans-serif; /* Modern font */
+  color: #fff; /* White text */
+  text-align: center; /* Add this to center the text */
+  justify-content: center; /* Add this to center the content horizontally */
+  align-items: center; /* Add this to center the content vertically */
+}
+
+
+  .features-section {
+    margin-bottom: 10px;
+  }
+  
+  .features-section h2 {
+    margin-top: 0;
+  }
+  
+  .features-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .features-section li {
+    margin-bottom: 10px;
+  }
+  
+  .features-section li:before {
+    content: "\2713";
+    font-size: 18px;
+    color: #4CAF50;
+    margin-right: 10px;
+  }
+  
+  .cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #3e8e41;
+  }
